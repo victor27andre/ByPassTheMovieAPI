@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "lybNtITvdM7Dz/MXGU9ULWrr13Afh5P2wcSU2AA3WEh1yj2HFnnniHvbdIfv8xUHMldjYItQs0TZJapJec3dDw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\victor.costa\\Documents\\docsVictor\\teclaT\\ByPassTheMovieAPI\\ByPassTheMovieAPI\\ByPassTheMovieAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\victor.costa\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\victor.costa\\.nuget\\packages\\restsharp\\106.11.7\\restsharp.106.11.7.nupkg.sha512"
+  ],
+  "logs": []
+}
