@@ -18,6 +18,4 @@ C:\Users\victor.costa\Documents\docsVictor\teclaT\ByPassTheMovieAPI\ByPassTheMov
 C:\Users\victor.costa\Documents\docsVictor\teclaT\ByPassTheMovieAPI\ByPassTheMovieAPI\obj\Debug\netcoreapp3.1\ByPassTheMovieAPI.dll
 C:\Users\victor.costa\Documents\docsVictor\teclaT\ByPassTheMovieAPI\ByPassTheMovieAPI\obj\Debug\netcoreapp3.1\ByPassTheMovieAPI.pdb
 C:\Users\victor.costa\Documents\docsVictor\teclaT\ByPassTheMovieAPI\ByPassTheMovieAPI\obj\Debug\netcoreapp3.1\ByPassTheMovieAPI.genruntimeconfig.cache
-C:\Users\victor.costa\Documents\docsVictor\teclaT\ByPassTheMovieAPI\ByPassTheMovieAPI\obj\Debug\netcoreapp3.1\ByPassTheMovieAPI.csproj.CoreCompileInputs.cache
-C:\Users\victor.costa\Documents\docsVictor\teclaT\ByPassTheMovieAPI\ByPassTheMovieAPI\obj\Debug\netcoreapp3.1\ByPassTheMovieAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\victor.costa\Documents\docsVictor\teclaT\ByPassTheMovieAPI\ByPassTheMovieAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll

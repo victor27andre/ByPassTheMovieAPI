@@ -9,6 +9,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using System.IdentityModel.Tokens.Jwt;
+using IdentityServer4.AccessTokenValidation;
+using IdentityModel;
 
 namespace ByPassTheMovieAPI
 {
@@ -25,6 +28,23 @@ namespace ByPassTheMovieAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            // Setting OAuth2 configuration
+            JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
+            services.AddAuthentication(o =>
+            {
+                o.DefaultScheme = IdentityServerAuthenticationDefaults.AuthenticationScheme;
+                o.DefaultAuthenticateScheme = IdentityServerAuthenticationDefaults.AuthenticationScheme;
+            })
+                .AddIdentityServerAuthentication(options =>
+                {
+                    options.Authority = "http://jpproject-sso:5000";
+                    options.RequireHttpsMetadata = false;
+                    options.ApiSecret = "api-secret";
+                    options.ApiName = "report-api";
+                    options.RoleClaimType = JwtClaimTypes.Role;
+                    options.NameClaimType = JwtClaimTypes.Name;
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -37,6 +57,8 @@ namespace ByPassTheMovieAPI
 
             app.UseRouting();
 
+            // Adding auth and auth for api
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

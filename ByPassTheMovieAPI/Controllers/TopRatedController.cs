@@ -5,11 +5,13 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using RestSharp;
 using ByPassTheMovieAPI.VO;
+using Microsoft.AspNetCore.Authorization;
+
 
 namespace ByPassTheMovieAPI.Controllers
 {
     [Produces("application/json")]
-    [Route("api/")]
+    [Route("api/"), Authorize]
     public class TopRatedController : Controller
     {
 
